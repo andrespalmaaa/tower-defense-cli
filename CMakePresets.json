@@ -1,0 +1,89 @@
+{
+    "version": 8,
+    "configurePresets": [
+        {
+            "name": "Debug-Windows",
+            "displayName": "GCC (Debug) 13.2.0 x86_64-w64-mingw32 (ucrt64)",
+            "description": "Using compilers: C = C:\\msys64\\ucrt64\\bin\\gcc.exe, CXX = C:\\msys64\\ucrt64\\bin\\g++.exe",
+            "generator": "MinGW Makefiles",
+            "binaryDir": "${sourceDir}/build/Debug-Windows",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Debug"
+            }
+        },
+        {
+            "name": "Release-Windows",
+            "displayName": "GCC (Release) 13.2.0 x86_64-w64-mingw32 (ucrt64)",
+            "description": "Using compilers: C = C:\\msys64\\ucrt64\\bin\\gcc.exe, CXX = C:\\msys64\\ucrt64\\bin\\g++.exe",
+            "generator": "MinGW Makefiles",
+            "binaryDir": "${sourceDir}/build/Release-Windows",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Release"
+            }
+        },
+        {
+            "name": "Debug-macOS-Intel",
+            "displayName": "Clang (Debug) x86_64 macOS",
+            "description": "Using Clang for Intel-based macOS systems",
+            "generator": "Unix Makefiles",
+            "binaryDir": "${sourceDir}/build/Debug-macOS-Intel",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Debug",
+                "CMAKE_OSX_ARCHITECTURES": "x86_64"
+            }
+        },
+        {
+            "name": "Release-macOS-Intel",
+            "displayName": "Clang (Release) x86_64 macOS",
+            "description": "Using Clang for Intel-based macOS systems",
+            "generator": "Unix Makefiles",
+            "binaryDir": "${sourceDir}/build/Release-macOS-Intel",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Release",
+                "CMAKE_OSX_ARCHITECTURES": "x86_64"
+            }
+        },
+        {
+            "name": "Debug-macOS-AppleSilicon",
+            "displayName": "Clang (Debug) arm64 macOS",
+            "description": "Using Clang for Apple Silicon-based macOS systems",
+            "generator": "Unix Makefiles",
+            "binaryDir": "${sourceDir}/build/Debug-macOS-AppleSilicon",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Debug",
+                "CMAKE_OSX_ARCHITECTURES": "arm64"
+            }
+        },
+        {
+            "name": "Release-macOS-AppleSilicon",
+            "displayName": "Clang (Release) arm64 macOS",
+            "description": "Using Clang for Apple Silicon-based macOS systems",
+            "generator": "Unix Makefiles",
+            "binaryDir": "${sourceDir}/build/Release-macOS-AppleSilicon",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Release",
+                "CMAKE_OSX_ARCHITECTURES": "arm64"
+            }
+        },
+        {
+            "name": "Debug-Ubuntu",
+            "displayName": "GCC (Debug) Ubuntu",
+            "description": "Using GCC for Linux-based systems (Ubuntu)",
+            "generator": "Unix Makefiles",
+            "binaryDir": "${sourceDir}/build/Debug-Ubuntu",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Debug"
+            }
+        },
+        {
+            "name": "Release-Ubuntu",
+            "displayName": "GCC (Release) Ubuntu",
+            "description": "Using GCC for Linux-based systems (Ubuntu)",
+            "generator": "Unix Makefiles",
+            "binaryDir": "${sourceDir}/build/Release-Ubuntu",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Release"
+            }
+        }
+    ]
+}
